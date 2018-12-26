@@ -32,7 +32,7 @@ function refine_cure(spell, action, spellMap, eventArgs)
                 preferredCure = 'Cure VI'
             end
                 -- Rdm, Sch and Pld have high skill and up to Cure IV
-        elseif player.main_job == 'BLM' or player.main_job == 'SCH' then
+        elseif player.main_job == 'BLM' or player.main_job == 'SCH' or player.main_job == 'RDM' then
             if missingHP < 150 then
                 preferredCure = 'Cure'
             elseif missingHP < 350 then
